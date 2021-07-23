@@ -1,0 +1,91 @@
+// SECCION USUARIO Y BOTONES
+.section-usuario {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    // padding-top: .5rem;
+    .section-usuario__cont {
+        display: flex;
+        width: 80%;
+        .section-usuario__cont-imagen {
+            display: flex;
+            padding-left: 5rem;
+            img {
+                border-radius: 50%;
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+        .section-usuario__cont-dato {
+            display: flex;
+            flex-direction: column;
+            padding-left: 1rem;
+            align-content: center;
+            justify-content: center;
+            align-items: flex-start;
+            h3 {
+                display: inline-flex;
+                font-size: $fs-x-large;
+                font-weight: bold;
+            }
+            h4 {
+                display: inline-flex;
+                font-size: $fs-x-small;
+                color: darkgray;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .section-usuario__button {
+            display: none;
+            .section-usuario__button-mensaje {
+                display: none;
+            }
+            .section-usuario__button-seguir {
+                display: none;
+            }
+        }
+    }
+
+        .section-usuario__button {
+            display: flex;
+            align-items: center;
+            .section-usuario__button-mensaje {
+                background-color: #92dce5;
+                color: #ffffff;
+                border: none;
+                padding: .2rem .75rem .2rem .75rem;
+                margin-right: 1rem;
+            }
+            .section-usuario__button-seguir {
+                background-color: #ef6461;
+                color: #ffffff;
+                padding: .2rem .75rem .2rem .75rem;
+                border: none;
+                margin-right: 1rem;
+            }
+        }
+    }
+// FIN SECCION USUARIO Y BOTONES
+
+// SECCION VIDEOS POPULARES
+.videos-popu {
+    .videos-popu__row {
+        .videos-popu__row-col {
+            padding-bottom: 1rem;
+            img {
+                width: 100%;
+                height: 8.6rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h5 {
+                font-weight: bold;
+            }
+            h6 {
+                color: #4c4c4c;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,22 @@
+.navbar {
+    display: inline-flex;
+    width: 100%;
+    .navbar__logo {
+        display: flex;
+        padding-left: 4rem;
+        .navbar__logo-text {
+            font-size: $fs-xx-large;
+        }
+        .navbar__logo-text-min {
+            font-size: $fs-xx-small;
+        }
+    }
+    // @include media-breakpoint-down(sm) {
+    //     .navbar-collapse {
+    //         padding-right: .1rem;
+    //     }
+    // }
+    .navbar-collapse {
+        padding-right: 4rem;
+    }
+}
